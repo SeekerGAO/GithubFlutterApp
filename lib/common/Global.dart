@@ -6,6 +6,9 @@ import 'package:github_flutter_app/models/profile.dart';
 import 'package:github_flutter_app/models/user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'NetCache.dart';
+import 'index.dart';
+
 /// 创建五套主题
 const _themes = <MaterialColor>[
   Colors.blue,
@@ -20,6 +23,9 @@ class Global {
   static SharedPreferences _prefs;
 
   static Profile profile = Profile();
+
+  // 网络缓存对象
+  static NetCache netCache = NetCache();
 
   // 主题列表
   static List<MaterialColor> get themes => _themes;
@@ -44,6 +50,9 @@ class Global {
       ..enable = true
       ..maxAge = 3600
       ..maxCount = 100;
+
+    //初始化网络请求相关配置
+    Git.init();
   }
 
   // 持久化Profile信息

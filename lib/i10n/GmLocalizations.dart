@@ -34,7 +34,7 @@ class GmLocalizationsDelegate extends LocalizationsDelegate<GmLocalizations>{
   Future<GmLocalizations> load(Locale locale) {
     // TODO: implement load
     return SynchronousFuture<GmLocalizations>(
-      GmLocalizations(locale.languageCode == 'zh');
+      GmLocalizations(locale.languageCode == 'zh')
     );
   }
 

@@ -31,6 +31,8 @@ dependencies:
   shared_preferences: ^0.5.3+4
   dio: ^2.2.2
   provider: ^3.1.0
+  flukit: ^1.0.2
+  cached_network_image: ^1.1.1
 
 dev_dependencies:
   flutter_test:
@@ -77,3 +79,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: LiuJianMaoCao
+      fonts:
+        - asset: fonts/LiuJianMaoCao-Regular.ttf
+    - family: ZCOOLKuaiLe
+      fonts:
+        - asset: fonts/ZCOOLKuaiLe-Regular.ttf
+
+    - family: myIcon
+      fonts:
+        - asset: fonts/iconfont.ttf

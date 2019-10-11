@@ -14,7 +14,19 @@ class GmLocalizations{
 
   //Locale相关值，title为应用标题
   String get title{
-    return isZh ? "Github 应用" : "Github APP";
+    return isZh ? "Github客户端" : "Github APP";
+  }
+
+  String get home{
+    return isZh ? "首页" : "Home";
+  }
+
+  String get login{
+    return isZh ? "登录" : "Login";
+  }
+
+  String get noDescription{
+    return isZh ? "无描述" : "noDescription";
   }
 }
 

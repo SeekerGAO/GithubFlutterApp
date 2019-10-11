@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
           },
           // 注册命名路由表
           routes: <String, WidgetBuilder>{
-
+            "login": (context) => LoginRoute()
           },
         );
       }),

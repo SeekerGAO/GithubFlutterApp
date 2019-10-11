@@ -52,6 +52,31 @@ class GmLocalizations{
   String get yes{
     return isZh ? "确定" : "sure";
   }
+
+  String get userName{
+    return isZh ? "用户名" : "userName";
+  }
+
+  String get userNameOrEmail{
+    return isZh ? "用户名或邮箱" : "userNameOrEmail";
+  }
+
+  String get userNameRequired{
+    return isZh ? "请输入用户名" : "userNameRequired";
+  }
+
+  String get password{
+    return isZh ? "密码" : "password";
+  }
+
+  String get passwordRequired{
+    return isZh ? "请输入密码" : "passwordRequired";
+  }
+
+  String get userNameOrPasswordWrong{
+    return isZh ? "用户名或密码错误" : "userNameOrPasswordWrong";
+  }
+
 }
 
 /// 在Locale改变时加载新的Locale资源

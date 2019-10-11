@@ -28,6 +28,30 @@ class GmLocalizations{
   String get noDescription{
     return isZh ? "无描述" : "noDescription";
   }
+
+  String get theme{
+    return isZh ? "主题" : "Theme";
+  }
+
+  String get language{
+    return isZh ? "语言" : "Language";
+  }
+
+  String get logout{
+    return isZh ? "登出" : "Logout";
+  }
+
+  String get logoutTip{
+    return isZh ? "是否想要登出" : "Do you want to Logout?";
+  }
+
+  String get cancel{
+    return isZh ? "取消" : "cancel";
+  }
+
+  String get yes{
+    return isZh ? "确定" : "sure";
+  }
 }
 
 /// 在Locale改变时加载新的Locale资源

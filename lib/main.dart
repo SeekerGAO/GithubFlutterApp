@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:github_flutter_app/routes/index.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           onGenerateTitle: (context) {
             return GmLocalizations.of(context).title;
           },
-          home: null, // 应用的主页
+          home: HomeRoute(), // 应用的主页
           locale: localeModel.getLocale(),
           // 支持中文、美式英语
           supportedLocales: [

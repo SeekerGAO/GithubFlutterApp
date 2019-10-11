@@ -71,20 +71,20 @@ class _RepoItemState extends State<RepoItem> {
                       padding: const EdgeInsets.only(top: 8, bottom: 12),
                       child: widget.repo.description == null
                           ? Text(
-                        GmLocalizations.of(context).noDescription,
-                        style: TextStyle(
-                            fontStyle: FontStyle.italic,
-                            color: Colors.grey[700]),
-                      )
+                              GmLocalizations.of(context).noDescription,
+                              style: TextStyle(
+                                  fontStyle: FontStyle.italic,
+                                  color: Colors.grey[700]),
+                            )
                           : Text(
-                        widget.repo.description,
-                        maxLines: 3,
-                        style: TextStyle(
-                          height: 1.15,
-                          color: Colors.blueGrey[700],
-                          fontSize: 13,
-                        ),
-                      ),
+                              widget.repo.description,
+                              maxLines: 3,
+                              style: TextStyle(
+                                height: 1.15,
+                                color: Colors.blueGrey[700],
+                                fontSize: 13,
+                              ),
+                            ),
                     ),
                   ],
                 ),
@@ -145,17 +145,16 @@ class _RepoItemState extends State<RepoItem> {
   }
 }
 
-Widget gmAvatar(String url, {
+Widget gmAvatar(
+  String url, {
   double width = 30,
   double height,
   BoxFit fit,
   BorderRadius borderRadius,
 }) {
-  var placeholder = Image.asset(
-      "imgs/avatar-default.png", //头像占位图，加载过程中显示
+  var placeholder = Image.asset("imgs/avatar-default.png", //头像占位图，加载过程中显示
       width: width,
-      height: height
-  );
+      height: height);
   return ClipRRect(
     borderRadius: borderRadius ?? BorderRadius.circular(2),
     child: CachedNetworkImage(
@@ -163,8 +162,8 @@ Widget gmAvatar(String url, {
       width: width,
       height: height,
       fit: fit,
-      placeholder: (context, url) =>placeholder,
-      errorWidget: (context, url, error) =>placeholder,
+      placeholder: (context, url) => placeholder,
+      errorWidget: (context, url, error) => placeholder,
     ),
   );
 }
